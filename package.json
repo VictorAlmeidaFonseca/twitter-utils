@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "jest", 
-    "sample": "sample",
     "prepare": "husky install"
   },
   "author": "Victor de Almeida Fonseca",
