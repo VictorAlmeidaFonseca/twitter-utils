@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "commit": "exec < /dev/tty && git cz --hook || true",
+    "test": "jest", 
     "prepare": "husky install"
   },
   "author": "Victor de Almeida Fonseca",
@@ -30,7 +29,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run test",
-      "prepare-commit-msg": "npm run commit"
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
   "config": {
