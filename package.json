@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest", 
+    "test": "jest",
     "commit": "git commit -m \"send\"",
     "prepare": "husky install"
   },
   "author": "Victor de Almeida Fonseca",
   "license": "ISC",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
@@ -27,6 +28,10 @@
   "dependencies": {
     "axios": "^0.21.1"
   },
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+],
   "husky": {
     "hooks": {
       "pre-commit": "npm run test",
