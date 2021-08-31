@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IHttpClient, IRequest, IResponse } from './interfaces/http-clients'
+import { IHttpClient, IRequest, IResponse } from 'interfaces/http-clients'
 
 export default class AxiosClient implements IHttpClient {    
     public async request(options: IRequest): Promise<IResponse> {
