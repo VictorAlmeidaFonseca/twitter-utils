@@ -1,5 +1,5 @@
 
-import AxiosClient from '../../src/clients/axios'
+import AxiosClient from 'clients/axios'
 
 const axios = new AxiosClient()
 const request = {
